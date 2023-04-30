@@ -77,7 +77,7 @@ Click The Below Button To See The Message!
             )
     await event.answer(
             [dn],
-            switch_pm="Bu gizli mesajdır! Sssh
+            switch_pm="Bu gizli mesajdır! Sssh"
 
 ",
             switch_pm_param="start"
