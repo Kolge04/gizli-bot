@@ -99,7 +99,5 @@ async def ws(event):
         return
     await event.answer(msg, alert=True)
 
-print("Uğurla Bot Başladı!
-
-")
+print("Uğurla Bot Başladı!")
 bot.run_until_disconnected()
