@@ -2,20 +2,10 @@ from telethon import events, TelegramClient, Button
 import logging
 from telethon.tl.functions.users import GetFullUserRequest as us
 import os
+from Config import config
+from Config import xaos as bot
 
 
-logging.basicConfig(level=logging.INFO)
-
-
-TOKEN = os.environ.get("TOKEN", None)
-
-bot = TelegramClient(
-        "Whisper",
-        api_id=6,
-        api_hash="eb06d4abfb49dc3eeb1aeb98ae0f581e"
-        ).start(
-                bot_token=TOKEN
-                )
 db = {}
 
 @bot.on(events.NewMessage(pattern="^[!?/]start$"))
