@@ -95,9 +95,7 @@ async def ws(event):
     msg = db["msg"]
     if msg == []:
         await event.anwswer(
-                "Vay!
-
-\nIt's Mənim Serverimnən Silonmiş Kimi Görsənir!", alert=True)
+                "Vay! \nIt's Mənim Serverimnən Silonmiş Kimi Görsənir!", alert=True)
         return
     await event.answer(msg, alert=True)
 
